@@ -4,7 +4,21 @@ class Queue {
     this.elements = []
   }
   
-  // Implementar aqui
+  size(){
+    return this.elements.length
+  }
+
+  add(item){
+    return this.elements.push(item)
+  }
+
+  peek(){
+    return this.elements.unshift()
+  }
+
+  dequeue(item){
+    return this.elements.shift(item)
+  }
 }
 
 module.exports = Queue
